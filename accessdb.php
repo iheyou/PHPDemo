@@ -30,7 +30,6 @@
 		  "ty_gooddetailimg"=>"'".parent::Post("product_label")."'",
 		  "ty_colltime"=>"'".time()."'",
 		  "ty_buyurl"=>"'".parent::Post("product_buyurl")."'"
-		
 		);
 		
 		$mode=parent::sqlInsert("ty_goods",$listarray);
