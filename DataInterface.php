@@ -29,8 +29,8 @@ class DataInterface{
 		 }
 	  }
 	  $mysql="insert into ".$table." (".$astr.") values (".$bstr.")";
-	  mysql_query("set names 'utf8'");
-	  $rs = mysql_query($mysql);
+	  mysqli_query("set names 'utf8'");
+	  $rs = mysqli_query($mysql);
 	  return $rs;
 	}
 	public function sqlInsertonly($table,$values){
