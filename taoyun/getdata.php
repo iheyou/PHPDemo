@@ -25,7 +25,8 @@
 		echo "打开数据库失败！<br>";
 	}
 
-	$sql_insert = "INSERT INTO taoyunzhushou_qa (qa_title, qa_content) VALUES ('$item_title', '$item_content')";
+	$sql_insert = "INSERT INTO wenti (qa_title, qa_content) VALUES ('$item_title', '$item_content')";
+	mysqli_query("set names 'utf8'");
 	if (!$connect->query($sql_insert)) {
 		echo "添加item失败！<br>";
 	} else {
